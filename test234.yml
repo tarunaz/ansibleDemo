@@ -1,6 +1,8 @@
-- name: Hello World Sample
-  hosts: all
+---
+# This playbook uses the win_ping module to test connectivity to Windows hosts
+- name: Ping 
+  hosts: all 
+
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!
+  - name: ping
+    win_ping:
