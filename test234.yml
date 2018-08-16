@@ -1,6 +1,6 @@
-e: Hello World Sample
+- name: Hello World Sample
   hosts: all
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello World this world!"
+        msg: "Hello World!
