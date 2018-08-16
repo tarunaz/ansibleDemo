@@ -1,9 +1,6 @@
-# Test connectivity to a windows host
-# ansible winserver -m win_ping
-
-# Example from an Ansible Playbook
-- win_ping:
-
-# Induce an exception to see what happens
-- win_ping:
-    data: crash
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
