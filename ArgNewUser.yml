@@ -1,0 +1,9 @@
+- name: check
+  hosts: all
+  
+  tasks:
+   - name: Add User
+     win_user:
+       name: {{ ansible_user }}
+       password: {{ ansible_password }}
+       state: present
