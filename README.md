@@ -1,4 +1,4 @@
-# ansible Demo For Ansible Tower for a windows host
+# ansible Demo For RedHat Ansible Tower on a windows host
 # 1) Adduser.yml adds a hardcoded user named BOB to a windows machine
 # 2) ArgsNewUser.yml adds a new user to windows wth 2 given extra variables passed in as arguments, new name and password
 # 3) GithubTest.yml Checks to see if Github repository is pulled to tower
