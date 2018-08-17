@@ -1,6 +1,6 @@
-- name: Hello World Sample
+- name: Testing Github Sourve
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: Hello Test
       debug:
         msg: "Hello World!"
