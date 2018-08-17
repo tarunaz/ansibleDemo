@@ -1,4 +1,4 @@
-- name: Ensure user bob is present
+- name: Adding a new user without Args
   hosts: all
   
   tasks:
