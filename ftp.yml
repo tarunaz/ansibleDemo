@@ -2,7 +2,7 @@
 - name: Move the demo.txt file to Windows Host
   hosts: all
   
- tasks:
+  tasks:
   - name: Move File
     win_copy:
       src: /home/ec2-user/demo.txt
