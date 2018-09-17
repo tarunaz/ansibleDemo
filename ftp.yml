@@ -5,6 +5,6 @@
   tasks:
   - name: Move File
     win_copy:
-      src: /home/ec2-user/demo.txt
-      dest: C:\Users\Administrator\Desktop\demo.txt
+      src: 'ec2-user@ip-172-31-13-190/home/ec2-user/demo.txt'
+      dest: c:\Users\Administrator\Desktop\demo.txt
       remote_src: no
