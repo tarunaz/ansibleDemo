@@ -1,0 +1,5 @@
+---
+- name: Move the Demo.txt file to Windows Host
+  win_copy:
+    src: /home/ec2-user/myplatform/ansible/Demo.txt
+    dest: C:\Users\Administrator\Desktop\
