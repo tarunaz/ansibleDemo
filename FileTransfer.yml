@@ -1,7 +1,7 @@
 ---
 - name: Move the Demo.txt file to Windows Host
   hosts: all
-  sudo: yes
+  become: True
   
   tasks:
   - name: Move File
