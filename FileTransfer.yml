@@ -1,7 +1,6 @@
 ---
 - name: Move the Demo.txt file to Windows Host
   hosts: all
-  become: True
   
   tasks:
   - name: Move File
