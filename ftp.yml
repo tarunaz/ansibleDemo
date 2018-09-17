@@ -2,9 +2,8 @@
 - name: Move the demo.txt file to Windows Host
   hosts: all
   
-  tasks:
-  - name: Move File
-    win_copy:
-      src: 'ec2-user@ip-172-31-13-190/home/ec2-user/demo.txt'
-      dest: c:\Users\Administrator\Desktop\demo.txt
-      remote_src: no
+- name: Move File
+  win_copy:
+    src: /home/ec2-user/demo.txt
+    dest: c:\Users\Administrator\Desktop\demo.txt
+    remote_src: no
