@@ -8,4 +8,4 @@
       src: /home/ec2-user/demo.txt
       dest: C:\Users\Administrator\Desktop\demo.txt
       remote_src: no
-    become_mehto: runas
+    become_mehtod: runas
