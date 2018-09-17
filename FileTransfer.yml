@@ -6,6 +6,6 @@
   tasks:
   - name: Move File
     win_copy:
-      src: /home/ec2-user/myplatform/ansible/Demo.txt
-      dest: c:\Users\Administrator\Desktop\
-      remote_src: no
+      src: C:\Users\Administrator\Desktop\test.txt
+      dest: C:\Users\Administrator\Desktop\demo.txt
+      remote_src: yes
