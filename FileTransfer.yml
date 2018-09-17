@@ -6,4 +6,4 @@
   - name: Move File
     win_copy:
       src: /home/ec2-user/myplatform/ansible/Demo.txt
-      dest: C:\Users\Administrator\Desktop\
+      dest: c:\Users\Administrator\Desktop\
