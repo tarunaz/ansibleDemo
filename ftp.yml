@@ -1,6 +1,7 @@
 ---
 - name: Move the demo.txt file to Windows Host
   hosts: all
+  become_method: runas
   
   tasks:
   - name: Move File
@@ -9,6 +10,5 @@
       dest: c:\Users\Administrator\Desktop\demo.txt
       remote_src: no
     become: yes
-    become_mehtod: runas
     become_user: Administrator
-    become_password: M.Rr@GoL)HJmOBCoFtwl-D%Ah!2*Atu?
+   # become_password: M.Rr@GoL)HJmOBCoFtwl-D%Ah!2*Atu?
