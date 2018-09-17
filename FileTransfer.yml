@@ -7,3 +7,4 @@
     win_copy:
       src: /home/ec2-user/myplatform/ansible/Demo.txt
       dest: c:\Users\Administrator\Desktop\
+      remote_src: False
