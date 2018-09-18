@@ -1,4 +1,10 @@
 ---
+- name: grant the ansible user the SeTcbPrivilege right
+ win_user_right:
+   name: SeTcbPrivilege
+   users: '{{ansible_user}}'
+   action: add
+
 - name: Move the demo.txt file to Windows Host
   hosts: all
   become_method: runas
