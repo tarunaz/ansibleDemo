@@ -7,10 +7,10 @@
   tasks:
   
   - name: grant the ansible user the SeTcbPrivilege right
-  win_user_right:
-    name: SeTcbPrivilege
-    users: Administrator
-    action: add
+    win_user_right:
+      name: SeTcbPrivilege
+      users: Administrator
+      action: add
 
   - name: Move File
     win_copy:
