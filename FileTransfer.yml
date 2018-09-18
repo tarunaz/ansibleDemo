@@ -8,5 +8,4 @@
     win_get_url:
       url: https://s3-us-west-2.amazonaws.com/ansible-demo-test-bucket-101/testFile.txt
       dest: 'c:\Users\Administrator\Desktop\mattdemo.txt'
-     #url_username: MattHughesEE
-     #url_password: Mr93ae96
+
