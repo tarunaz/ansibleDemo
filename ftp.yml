@@ -11,6 +11,7 @@
     name: SeTcbPrivilege
     users: Administrator
     action: add
+
   - name: Move File
     win_copy:
       src: /home/ec2-user/demo.txt
