@@ -6,7 +6,7 @@
   tasks:
   - name: Move File
     win_copy:
-      src: /home/ec2-user/vhost.conf
+      src: /home/ec2-user/vhosts.conf
       dest: c:\Users\Administrator\Desktop\demo.conf
       remote_src: no
 
