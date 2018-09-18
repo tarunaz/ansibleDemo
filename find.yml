@@ -8,5 +8,5 @@
   aws_s3:
     bucket: ansible-demo-test-bucket-101
     object: /testFile.txt
-    dest: {change to your desired location}
+    dest: 'c:\Users\Administrator\Desktop\demomatt.txt
     mode: get
