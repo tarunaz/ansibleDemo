@@ -2,6 +2,7 @@
 - name: Move the demo.txt file to Windows Host
   hosts: all
   become_method: runas
+  become_user: Administrator
   
   tasks:
   - name: Move File
