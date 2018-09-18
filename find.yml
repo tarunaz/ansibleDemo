@@ -6,7 +6,7 @@
   tasks:
   - name: Download file from FTP with authentication
     win_get_url:
-      url: https://github.com/MattHughesEE/ansibleDemo/blob/master/patch.yml
-      dest: 'c:\Users\Administrator\ftp-file.txt'
-      url_username: MattHughesEE
-      url_password: Mr93ae96
+      url: https://github.com/MattHughesEE/ansibleDemo/blob/master/demo.txt
+      dest: 'c:\Users\Administrator\Desktop\mattdemo.txt'
+      #url_username: MattHughesEE
+      #url_password: Mr93ae96
