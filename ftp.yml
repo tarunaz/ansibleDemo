@@ -6,8 +6,8 @@
   tasks:
   - name: Move File
     win_copy:
-      src: /home/ec2-user/demo.txt
-      dest: c:\Users\Administrator\Desktop\demo.txt
+      src: /home/ec2-user/vhost.conf
+      dest: c:\Users\Administrator\Desktop\demo.conf
       remote_src: no
 
    # become_password: M.Rr@GoL)HJmOBCoFtwl-D%Ah!2*Atu?
