@@ -1,7 +1,7 @@
 ---
 - name: Find the demo.txt file
   hosts: all
-  become_method: runas
+  #become_method: runas
   
   tasks:
   - name: Download file from FTP with authentication
