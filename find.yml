@@ -9,4 +9,4 @@
     bucket: ansible-demo-test-bucket-101
     object: /testFile.txt
     dest: 'c:\Users\Administrator\Desktop\demomatt.txt
-    mode: get
+  mode: get
