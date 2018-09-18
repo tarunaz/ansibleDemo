@@ -5,7 +5,7 @@
   
   tasks:
 - name: Simple GET operation
-  s3:
+  aws_s3:
     bucket: ansible-demo-test-bucket-101
     object: /testFile.txt
     dest: 'c:\Users\Administrator\Desktop\demomatt.txt'
