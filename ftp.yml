@@ -4,11 +4,7 @@
   become_method: runas
   
   tasks:
-  - name: Move File
-    win_copy:
-      src: /home/ec2-user/demo.txt
-      dest: c:\Users\Administrator\Desktop\demo.txt
-      remote_src: no
-    become: yes
-    become_user: Administrator
-   # become_password: M.Rr@GoL)HJmOBCoFtwl-D%Ah!2*Atu?
+- name: Download file from FTP with authentication
+  win_get_url:
+    url: ftp://18.237.243.155/test.txt
+    dest: 'c:\Users\Administrator\Desktop\
