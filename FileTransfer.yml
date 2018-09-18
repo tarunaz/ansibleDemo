@@ -1,12 +1,12 @@
 ---
 - name: Find the demo.txt file
- hosts: all
+  hosts: all
  #become_method: runas
 
- tasks:
- - name: Download file from FTP with authentication
-   win_get_url:
-     url: https://s3-us-west-2.amazonaws.com/ansible-demo-test-bucket-101/testFile.txt
-     dest: 'c:\Users\Administrator\Desktop\mattdemo.txt'
+  tasks:
+  - name: Download file from FTP with authentication
+    win_get_url:
+      url: https://s3-us-west-2.amazonaws.com/ansible-demo-test-bucket-101/testFile.txt
+      dest: 'c:\Users\Administrator\Desktop\mattdemo.txt'
      #url_username: MattHughesEE
      #url_password: Mr93ae96
