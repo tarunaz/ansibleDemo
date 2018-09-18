@@ -1,0 +1,9 @@
+---
+- name: Find the demo.txt file
+  hosts: all
+  become_method: runas
+  
+  tasks:
+  - name: Find File
+    find:
+      paths: /demo.txt
