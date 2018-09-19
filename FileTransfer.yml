@@ -4,16 +4,17 @@
  #become_method: runas
 
   tasks:
-  - name: Download file from FTP with authentication
+  - name: Download file from S3 bucket with authentication
     win_get_url:
       url: https://s3-us-west-2.amazonaws.com/ansible-demo-test-bucket-101/testFile.txt
       dest: 'c:\Users\Administrator\Desktop\testfile.txt'
   
-  - name: Find files and do not return the checksum
+  - name: Use 'stat' to retrieve facts for the file that was transferred
     stat:
       path: 'c:\Users\Administrator\Desktop\testfile.txt'
     register: p
       
-   - assert:
+   - name: Assert that transferred file exists
+     assert:
        that:
          - p.stat.exists
