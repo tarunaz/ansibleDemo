@@ -9,7 +9,7 @@
       url: https://s3-us-west-2.amazonaws.com/ansible-demo-test-bucket-101/testFile.txt
       dest: 'c:\Users\Administrator\Desktop\testfile.txt'
   
-  - name: Use stat to retrieve facts for the file that was transferred
+  - name: Use win_stat to retrieve facts for the file that was transferred
     win_stat:
       path: 'c:\Users\Administrator\Desktop\testfile.txt'
     register: p
