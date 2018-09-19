@@ -1,0 +1,16 @@
+---
+- name: Find the testfile.txt file
+  hosts: all
+ #become_method: runas
+
+  tasks:
+  - name: Download file from FTP with authentication
+    win_get_url:
+      url: https://s3-us-west-2.amazonaws.com/ansible-demo-test-bucket-101/testFile.txt
+      dest: 'c:\Users\Administrator\Desktop\testfile.txt'
+  - stat:
+     path: 'c:\Users\Administrator\Desktop\testfile.txt'
+     register: p
+   - assert:
+       that:
+         - p.stat.exists
