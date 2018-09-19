@@ -10,7 +10,7 @@
       dest: 'c:\Users\Administrator\Desktop\testfile.txt'
   
   - name: Use stat to retrieve facts for the file that was transferred
-    stat:
+    win_stat:
       path: 'c:\Users\Administrator\Desktop\testfile.txt'
     register: p
       
