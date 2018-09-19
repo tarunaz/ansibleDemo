@@ -11,7 +11,7 @@
   
   - name: Use stat to retrieve facts for the file that was transferred
     stat:
-      path: c:\Users\Administrator\Desktop\testfile.txt
+      path: "c:\Users\Administrator\Desktop\testfile.txt"
     register: p
       
   - name: Assert that transferred file exists
